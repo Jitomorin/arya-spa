@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Define the luxury theme palette */
+@theme {
+  /* Backgrounds */
+  --color-bg-deep: #0a0a0a;     /* Purest dark for the main background */
+  --color-bg-panel: #161616;    /* Slightly lighter dark for cards/panels */
+  
+  /* Text */
+  --color-text-primary: #f5f5f0;  /* Calming, off-white cream for headers */
+  --color-text-muted: #a1a1aa;    /* Muted gray for body text */
+
+  /* Accents */
+  --color-accent-gold: #c9a063;   /* Premium gold for CTAs/links */
+  --color-accent-teal: #38bdf8;   /* Soft, clean teal for subtle highlights */
+}
+
+/* Base styles to ensure dark mode is default */
+@layer base {
+  body {
+    @apply bg-bg-deep text-text-muted antialiased;
+    font-family: 'Inter', sans-serif; /* We'll assume Inter font is loaded */
+  }
+
+  h1, h2, h3 {
+    @apply text-text-primary font-semibold;
+  }
+}
