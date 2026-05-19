@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/LTS-logo.png';
 
 export default function Navbar() {
   const { scrollY } = useScroll();
@@ -51,12 +52,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Brand Identity */}
           <Link to="/" onClick={() => setIsOpen(false)} className="relative z-[110] flex flex-col group">
-            <span className="text-2xl font-serif tracking-widest text-[#f5f5f0] group-hover:text-[#c9a063] transition-colors duration-500">
-              ARYA'S
-            </span>
-            <span className="text-[0.6rem] uppercase tracking-[0.3em] text-white/50 font-sans mt-1">
-              Wellness & Spa
-            </span>
+            <img src={logo} alt="Arya's Wellness & Spa Logo" className="h-24 w-auto mb-1 group-hover:opacity-80 transition-opacity duration-300" />
           </Link>
 
           {/* Desktop Links */}

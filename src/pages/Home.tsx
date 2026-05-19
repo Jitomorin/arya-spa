@@ -50,7 +50,7 @@ export default function Home() {
       {/* --- 1. HERO SECTION --- */}
       <motion.section style={{ y: heroY, opacity: heroOpacity }} className="relative h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop" alt="Arya's Sanctuary" className="w-full h-full object-cover opacity-30 mix-blend-luminosity" />
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop" alt="" className="w-full h-full object-cover opacity-30 mix-blend-luminosity" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/40 via-[#050505]/60 to-[#050505]" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle,_rgba(201,160,99,0.15)_0%,_transparent_70%)] rounded-full blur-[100px] animate-pulse mix-blend-screen" />
         </div>
@@ -94,7 +94,7 @@ export default function Home() {
             <span className="font-serif italic text-[#c9a063]">Holistic Healing & Luxury Relaxation</span>
           </motion.h2>
           <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="text-white/50 text-lg md:text-xl leading-relaxed font-light">
-            Step into a world where stress melts away. From the rhythmic flow of a Thai massage to the purifying heat of a Moroccan bath, Arya's Wellness & Spa offers a bespoke journey for your body and soul. Our expert therapists and tranquil atmosphere provide the perfect escape from the everyday.
+            Step into a world where stress melts away. From the rhythmic flow of a Thai massage to the purifying heat of a Moroccan bath, Luxury Thai Spa offers a bespoke journey for your body and soul. Our expert therapists and tranquil atmosphere provide the perfect escape from the everyday.
           </motion.p>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import logo from '../assets/LTS-logo.png';
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-2xl font-serif text-[#c9a063] mb-6">About Us</h3>
             <p className="text-white/40 font-light max-w-md mb-6 leading-relaxed">
-              At Arya's Wellness & Spa, we believe that true beauty begins with inner peace. Our philosophy is rooted in the "Aspa" tradition—finding harmony through nature's purest elements. Every treatment is a journey, and every guest is a priority.
+              At Luxury Thai Spa, we believe that true beauty begins with inner peace. Our philosophy is rooted in the "Aspa" tradition—finding harmony through nature's purest elements. Every treatment is a journey, and every guest is a priority.
             </p>
           </div>
 
@@ -49,16 +50,11 @@ export default function Footer() {
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             className="w-full flex justify-center overflow-hidden"
           >
-            <h1 className="text-[18vw] leading-none font-serif text-[#111] uppercase tracking-tighter select-none relative whitespace-nowrap">
-              <span className="absolute inset-0 bg-gradient-to-b from-[#c9a063]/20 to-transparent bg-clip-text text-transparent opacity-50">
-                ARYA'S
-              </span>
-              ARYA'S
-            </h1>
+            <img src={logo} alt="Luxury Thai Spa Logo" className="w-56 h-auto opacity-10" />
           </motion.div>
           
           <div className="w-full flex flex-col md:flex-row justify-between items-center mt-10 text-xs text-white/30 uppercase tracking-widest font-sans">
-            <p>&copy; {new Date().getFullYear()} Arya's Wellness & Spa. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Luxury Thai Spa. All Rights Reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-white transition-colors">Instagram</a>
               <a href="#" className="hover:text-white transition-colors">Facebook</a>
